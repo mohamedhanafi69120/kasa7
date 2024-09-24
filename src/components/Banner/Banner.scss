@@ -1,7 +1,9 @@
+// Import des variables et mixins
+@import "../../sass/utils/variables";
+@import "../../sass/utils/mixins";
+
 .banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center-content; // Utilisation du mixin pour centrer
   width: 97%;
   height: 210px;
   border-radius: 25px;
@@ -10,7 +12,7 @@
 }
 
 h1 {
-  color: #ffffff;
+  color: $secondary-color; // Utilisation de la variable
   font-size: 48px;
   font-weight: 500;
 }

@@ -1,0 +1,8 @@
+// utils/mixins.scss
+
+// Mixin pour centrer le contenu
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

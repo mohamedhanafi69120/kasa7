@@ -1,3 +1,6 @@
+// Import des variables
+@import "../../sass/utils/variables";
+
 .cards-container {
   display: flex;
   justify-content: center;
@@ -8,7 +11,7 @@
   padding: 50px;
   margin: 2rem;
   border-radius: 25px;
-  background-color: #f6f6f6;
+  background-color: $background-color; // Utilisation de la variable
 }
 
 @media screen and (max-width: 1230px) {
@@ -21,6 +24,6 @@
 @media screen and (max-width: 980px) {
   .cards-container {
     padding: 0;
-    background-color: #fff;
+    background-color: $secondary-color; // Utilisation de la variable
   }
 }

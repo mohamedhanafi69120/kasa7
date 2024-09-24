@@ -1,17 +1,24 @@
-import bannerImg from "../../assets/images/IMG.png";
+// Accueil.jsx
+import React from "react";
+import bannerImg from "../../assets/images/IMG.png"; // Assurez-vous que le chemin vers l'image est correct
 import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-
-import "./Accueil.css";
+import ItemsData from "../../data/data.json"; // Assurez-vous que ce fichier JSON existe et est correctement formaté
+import Cards from "../../components/Cards/Cards";
 
 const Accueil = () => {
   return (
     <>
       <Header />
-
-      <Banner imageSrc={bannerImg} text="Chez vous, partout et ailleurs" />
-
+      <main className="main">
+        <Banner imageSrc={bannerImg} text="Chez vous, partout et ailleurs" />
+        <section className="cards-container">
+          {ItemsData.map((item) => (
+            <Cards key={item.id} item={item} />
+          ))}
+        </section>
+      </main>
       <Footer />
     </>
   );

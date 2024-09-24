@@ -1,0 +1,15 @@
+// Import des variables et mixins
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// Import des styles généraux
+@import "./Base/Global.scss";
+
+// Import des autres styles
+@import "../components/Banner/Banner";
+@import "../components/Footer/Footer";
+@import "../components/Header/Header";
+@import "../components/Cards/Cards";
+
+// Import des styles des pages
+@import "../pages/Accueil/Accueil";

@@ -1,13 +1,12 @@
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../../assets/images/LOGO(1).svg";
-import "./Header.css";
 
 const Header = () => {
   const location = useLocation("");
 
   return (
     <header className="header">
-      <img src={Logo} alt="" />
+      <img src={Logo} alt="Logo Kasa" />
       <ul className="links">
         <NavLink
           to="/accueil"
