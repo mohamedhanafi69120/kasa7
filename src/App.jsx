@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil/Accueil";
 import Apropos from "./pages/Apropos";
+import Erreur from "./pages/Erreur/Erreur";
 import "./sass/main.scss";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/accueil" />} />
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/apropos" element={<Apropos />} />
+        <Route path="*" element={<Erreur />} />
       </Routes>
     </BrowserRouter>
   );
