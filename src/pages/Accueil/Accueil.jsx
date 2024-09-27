@@ -4,7 +4,7 @@ import bannerImg from "../../assets/images/IMG.png"; // Assurez-vous que le chem
 import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import ItemsData from "../../data/data.json"; // Assurez-vous que ce fichier JSON existe et est correctement formaté
+import ItemsData from "../../data/data.json";
 import Cards from "../../components/Cards/Cards";
 
 const Accueil = () => {
