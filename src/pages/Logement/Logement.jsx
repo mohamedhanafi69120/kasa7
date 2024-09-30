@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Collapse from "../../components/Collapse/Collapse";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import Collapse from "../../components/Collapse/Collapse";
 import ItemsData from "../../data/data.json";
+import Slideshow from "../../components/Slideshow/Slideshow";
 
 const Logement = () => {
   const { id } = useParams(); /* Récupérer l'ID de l'article depuis l'URL */
@@ -22,12 +23,13 @@ const Logement = () => {
     return null;
   }
 
-  const { description, equipments, title, location } = housing;
+  const { pictures, description, equipments, title, location } = housing;
 
   return (
     <>
       <Header />
       <main className="housing-main">
+        <Slideshow images={pictures} />
         <section className="housing-header">
           <div className="housing-info">
             <h1 className="housing-title">{title}</h1>
