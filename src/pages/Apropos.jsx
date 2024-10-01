@@ -1,9 +1,9 @@
-import aboutBanner from "../assets/images/aproposIMG.png";
-import Banner from "../components/Banner/Banner";
-import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+import Banner from "../components/Banner/Banner";
+import aboutBanner from "../assets/images/aproposIMG.png";
 import Collapse from "../components/Collapse/Collapse";
 import collapsesData from "../data/collapsesData.json";
+import Footer from "../components/Footer/Footer";
 
 const Apropos = () => {
   return (

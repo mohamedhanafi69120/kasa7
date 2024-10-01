@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Cards = ({ item }) => {
+const Card = ({ item }) => {
   return (
-    <article key={item.id} className="card">
+    <article className="card">
       <Link to={`/logement/${item.id}`} className="card-link">
         <div className="img-container">
           <img src={item.cover} alt={item.title} />
@@ -15,4 +15,4 @@ const Cards = ({ item }) => {
   );
 };
 
-export default Cards;
+export default Card;

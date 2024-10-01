@@ -5,6 +5,7 @@ import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import ItemsData from "../../data/data.json";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import Host from "../../components/Host/Host";
 
 const Logement = () => {
   const { id } = useParams(); /* Récupérer l'ID de l'article depuis l'URL */
@@ -23,7 +24,16 @@ const Logement = () => {
     return null;
   }
 
-  const { pictures, description, equipments, title, location } = housing;
+  const {
+    pictures,
+    rating,
+    description,
+    equipments,
+    title,
+    location,
+    host: { name, picture },
+  } = housing;
+  const [firstName, lastName] = name.split(" ");
 
   return (
     <>
@@ -35,6 +45,12 @@ const Logement = () => {
             <h1 className="housing-title">{title}</h1>
             <p className="housing-location">{location}</p>
           </div>
+          <Host
+            rating={rating}
+            firstName={firstName}
+            lastName={lastName}
+            picture={picture}
+          />
         </section>
         <section className="housing-collapse">
           <Collapse title="Description">
