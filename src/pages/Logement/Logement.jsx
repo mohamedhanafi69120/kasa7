@@ -6,6 +6,7 @@ import Collapse from "../../components/Collapse/Collapse";
 import ItemsData from "../../data/data.json";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Host from "../../components/Host/Host";
+import Tags from "../../components/Tags/Tags"; // Assurez-vous que cet import est présent
 
 const Logement = () => {
   const { id } = useParams(); /* Récupérer l'ID de l'article depuis l'URL */
@@ -27,6 +28,7 @@ const Logement = () => {
   const {
     pictures,
     rating,
+    tags,
     description,
     equipments,
     title,
@@ -44,6 +46,7 @@ const Logement = () => {
           <div className="housing-info">
             <h1 className="housing-title">{title}</h1>
             <p className="housing-location">{location}</p>
+            <Tags tags={tags} />
           </div>
           <Host
             rating={rating}

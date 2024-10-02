@@ -1,0 +1,29 @@
+// Import des variables si elles ne sont pas déjà incluses
+@import "../../sass/utils/variables";
+
+.housing-tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.tag {
+  width: auto;
+  height: 25px;
+  background-color: $primary-color; // Utilisation de la variable
+  color: $secondary-color; // Utilisation de la variable
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px 24px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .tag {
+    font-size: 12px;
+  }
+  .housing-tags {
+    flex-wrap: wrap;
+  }
+}
