@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
-/********************import Link permet de créer un lien de navigation interne
- * à l'application sans recharger la page entière, ce qui rend la navigation
- *  fluide dans une application React. */
 
 const Card = ({ item }) => {
-  /***Card est un composant fonctionnel qui reçoit une prop
-   * appelée item. Cette prop est un objet contenant les informations de l'élément à afficher
-   * (comme l'id, le titre, et l'image de couverture).** */
   return (
     <article className="card">
       <Link to={`/logement/${item.id}`} className="card-link">
+        {/*Le chemin de destination construit dynamiquement
+      en utilisant l'ID de l'élément (item.id).exemple, 
+si item.id vaut 123, alors l'URL du lien sera /logement/123 */}
         <div className="img-container">
           <img src={item.cover} alt={item.title} />
         </div>

@@ -4,11 +4,13 @@ import icon from "../../assets/images/Vector.svg";
 const iconInitialState = {
   transform: "rotate(180deg)",
 };
-
 const Collapse = ({ title, children }) => {
+  /***Utilisation de useState pour gérer l'état */
   const [isOpen, setIsOpen] = useState(false);
   const [iconStyle, setIconStyle] = useState(iconInitialState);
+  /** Cet état gère les styles CSS appliqués à l'icône*/
 
+  /*Fonction pour gérer l'ouverture et la fermeture (toggleCollapse)*/
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
 

@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import ItemsData from "../../data/data.json";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags"; // Assurez-vous que cet import est présent
+import Footer from "../../components/Footer/Footer";
 
 const Logement = () => {
   const { id } = useParams(); /* Récupérer l'ID de l'article depuis l'URL */

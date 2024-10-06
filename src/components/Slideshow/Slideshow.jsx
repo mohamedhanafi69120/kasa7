@@ -3,6 +3,7 @@ import arrowNext from "../../assets/images/arrow-next.png";
 import arrowPrev from "../../assets/images/arrow-prev.png";
 
 const Slideshow = ({ images }) => {
+  /***le tableau qui contient les URL des l'images */
   const [current, setCurrent] = useState(0);
   const length = images.length;
 
@@ -19,13 +20,14 @@ const Slideshow = ({ images }) => {
       {images.map((image, index) => {
         return (
           <div key={index}>
+            {/**chaque d'une div -une clé pour aider react identifier  quelle image  */}
             {index === current && (
               <img className="housing-img" src={image} alt="housing" />
             )}
           </div>
         );
       })}
-
+      {/**Affichage du compteur d'image*/}
       {length > 1 && ( // Condition pour afficher le compteur et les flèches uniquement s'il y a plus d'une image
         <div className="slide-controls">
           <img

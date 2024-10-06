@@ -1,11 +1,11 @@
 // Accueil.jsx
 import React from "react";
-import bannerImg from "../../assets/images/IMG.png";
-import Banner from "../../components/Banner/Banner";
-import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import LogementsList from "../../data/data.json";
+import Banner from "../../components/Banner/Banner";
+import bannerImg from "../../assets/images/IMG.png";
 import Card from "../../components/Cards/Card";
+import LogementsList from "../../data/data.json";
+import Footer from "../../components/Footer/Footer";
 
 const Accueil = () => {
   return (

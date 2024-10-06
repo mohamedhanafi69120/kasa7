@@ -14,7 +14,7 @@ const Erreur = () => {
           </p>
         </div>
         <div className="back-link">
-          <Link to="/" style={{ color: "#ff6060", textDecoration: "none" }}>
+          <Link to="/" style={{ color: "#333", textDecoration: "none" }}>
             Retourner sur la page d'accueil
           </Link>
         </div>
