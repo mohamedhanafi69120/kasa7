@@ -5,7 +5,10 @@ import arrowPrev from "../../assets/images/arrow-prev.png";
 const Slideshow = ({ images }) => {
   /***le tableau qui contient les URL des l'images */
   const [current, setCurrent] = useState(0);
-  const length = images.length;
+  {
+    /**une variable qui garde la position actuelle (l'index)  */
+  }
+  const length = images.length; /**contient le nombre total d'images */
 
   const nextImage = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -27,8 +30,8 @@ const Slideshow = ({ images }) => {
           </div>
         );
       })}
-      {/**Affichage du compteur d'image*/}
-      {length > 1 && ( // Condition pour afficher le compteur et les flèches uniquement s'il y a plus d'une image
+
+      {length > 1 && ( // Condition pour afficher les flèches uniquement s'il y a plus d'une image
         <div className="slide-controls">
           <img
             src={arrowPrev}
