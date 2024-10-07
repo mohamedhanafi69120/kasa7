@@ -1,12 +1,10 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import ItemsData from "../../data/data.json";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags"; // Assurez-vous que cet import est présent
-import Footer from "../../components/Footer/Footer";
 
 const Logement = () => {
   const { id } = useParams(); /* Récupérer l'ID de l'article depuis l'URL */
@@ -39,7 +37,6 @@ const Logement = () => {
 
   return (
     <>
-      <Header />
       <main className="housing-main">
         <Slideshow images={pictures} />
         <section className="housing-header">
@@ -68,7 +65,6 @@ const Logement = () => {
           </Collapse>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

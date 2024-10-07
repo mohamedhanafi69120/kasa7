@@ -5,9 +5,9 @@ import arrowPrev from "../../assets/images/arrow-prev.png";
 const Slideshow = ({ images }) => {
   /***le tableau qui contient les URL des l'images */
   const [current, setCurrent] = useState(0);
-  {
-    /**une variable qui garde la position actuelle (l'index)  */
-  }
+
+  /**une variable qui garde la position actuelle (l'index)  */
+
   const length = images.length; /**contient le nombre total d'images */
 
   const nextImage = () => {

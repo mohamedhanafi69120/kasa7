@@ -18,3 +18,14 @@
 @import "../pages/Accueil/Accueil";
 @import "../pages/Erreur/Erreur"; // Correction de l'import
 @import "../pages/Logement/Logement";
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}

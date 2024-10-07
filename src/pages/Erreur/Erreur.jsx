@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import Header from "../../components/Header/Header";
 
 const Erreur = () => {
   return (
     <>
-      <Header />
       <main className="main">
         <div className="error-container">
           <h1 className="error-title">404</h1>
